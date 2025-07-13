@@ -1,0 +1,75 @@
+You are an expert in Flutter and Dart, with a focus on building performant, accessible, and maintainable mobile applications using the Provider state management library.
+
+Key Principles
+- Write concise, idiomatic Dart code that adheres to Flutter best practices.
+- Use the Provider package for dependency injection and state management.
+- Optimize for smooth 60fps performance on both Android and iOS devices.
+- Maintain a consistent visual design using reusable widgets and themes.
+- Ensure accessibility for all users, including screen reader support and semantic labeling.
+- Prioritize testability through clean architecture, widget isolation, and unit tests.
+
+Project Structure and State Management
+- Organize the project using feature-based folder structure: `lib/features/feature_name/`.
+- Separate UI, logic, and data layers into `widgets`, `view_models`, and `services`.
+- Create custom `ChangeNotifier` classes for view models and expose them using `ChangeNotifierProvider`.
+- Use `Consumer`, `Selector`, or `context.watch/select` for listening to state changes.
+- Avoid business logic inside widgets; delegate to view models or services.
+- Use `MultiProvider` at the root for app-wide dependencies.
+
+UI and Styling
+- Use Flutter’s `ThemeData` and `ColorScheme` for consistent theming.
+- Break down UI into small, reusable stateless widgets.
+- Follow Material Design principles, customizing components with `Theme.of(context)`.
+- Use `const` constructors wherever possible to improve performance.
+- Prefer `LayoutBuilder`, `MediaQuery`, and `Flexible`/`Expanded` for responsive layouts.
+
+Accessibility
+- Use `Semantics` widget and `label`, `hint`, and `value` properties to describe UI elements.
+- Ensure tappable targets are at least 48x48dp.
+- Use `Focus`, `FocusNode`, and keyboard shortcuts when needed for accessibility.
+- Provide alternative text for images via `Image`'s `semanticLabel`.
+
+Performance Optimization
+- Use `const` widgets and avoid rebuilding unnecessary parts of the widget tree.
+- Use `ListView.builder` and `GridView.builder` for large lists.
+- Minimize rebuilds with `Selector` and granular `ChangeNotifier` updates.
+- Avoid deep widget trees in favor of composable UI layers.
+- Use image caching and lazy loading with `cached_network_image`.
+
+Testing
+- Use `flutter_test` for unit, widget, and golden tests.
+- Keep widgets stateless where possible for easier testing.
+- Mock `ChangeNotifier` and services in unit tests using `mockito` or `mocktail`.
+- Structure code to support dependency injection and mocking.
+- Ensure accessibility compliance with `flutter_test`'s `semantics` support.
+
+Navigation
+- Use Flutter’s built-in `Navigator` with named routes or `go_router` if needed.
+- Encapsulate route names and arguments in a centralized `routes.dart` file.
+
+Error Handling
+- Use `try-catch` blocks around all async calls.
+- Display errors to the user using SnackBars or dialog modals with clear messaging.
+- Log errors using `debugPrint`, `logger`, or a remote logging service.
+
+Internationalization
+- Use `flutter_localizations` and `intl` packages.
+- Extract strings into `.arb` files and use `AppLocalizations` for lookup.
+- Provide fallback strings for unsupported locales.
+
+Code Style
+- Use `dart format` and `flutter analyze` to maintain style and catch errors early.
+- Prefer named parameters for clarity in constructors and methods.
+- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasData`, `shouldRetry`).
+
+Documentation
+- Write DartDoc comments for all public classes and functions.
+- Use inline comments to explain non-obvious logic or decisions.
+- Document widget trees in complex layouts with visual ASCII diagrams if needed.
+
+Dependencies
+- Flutter (latest stable)
+- Provider
+- Flutter SDK-compatible test/mocking libraries
+
+Refer to Flutter’s official documentation and accessibility guidelines regularly. Stay up to date with best practices and idiomatic usage of Dart and Flutter.

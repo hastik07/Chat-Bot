@@ -1,62 +1,60 @@
-# AI Chatbot App
+<h1 align="center" id="title">Flutter / AI ChatBot</h1>
 
-A professional AI chatbot mobile application built with Flutter, Supabase, Provider, Hive, and 21st.dev SDK for 3D UI elements.
+<p align="center"><img src="https://socialify.git.ci/hastik07/Chat-Bot/image?custom_language=Flutter&amp;font=Source+Code+Pro&amp;language=1&amp;logo=https%3A%2F%2Fregistry.npmmirror.com%2F%40lobehub%2Ficons-static-png%2F1.53.0%2Ffiles%2Flight%2Fcursor.png&amp;name=1&amp;owner=1&amp;pattern=Floating+Cogs&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
-## Features
-- **User authentication** (email/password, social login)
-- **Real-time chat with AI assistant**
-- **Modern chat UI** with media, emoji, and typing indicators
-- **Interactive 3D AI avatar**
-- **Offline support and encrypted local storage**
-- **MVVM architecture, clean code, and comprehensive testing**
-- **Responsive design** that adapts to all device sizes
+<p id="description">A professional AI chatbot mobile application built with Flutter Cursor Supabase Provider Hive and 21st.dev for 3D UI elements.</p>
 
-## Responsive Design
-- **Flexible layouts** using LayoutBuilder and relative sizing
-- **Adaptive typography** that scales with screen width
-- **Responsive components** (message bubbles, chat input, buttons)
-- **Multi-device support** (phones, tablets, different orientations)
-- **Touch-friendly interface** with proper sizing
+<h2>Project Screenshots:</h2>
 
-## Project Structure
+<img src="assets/screenshots/1.png" alt="project-screenshot" width="250" height="500/"><img src="assets/screenshots/2.png" alt="project-screenshot" width="250" height="500/"><img src="assets/screenshots/3.png" alt="project-screenshot" width="250" height="500/"><img src="assets/screenshots/4.png" alt="project-screenshot" width="250" height="500/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   User authentication (email/password social login)
+*   Real-time chat with AI assistant
+*   Modern chat UI with media emoji and typing indicators
+*   Interactive 3D AI avatar
+*   Offline support and encrypted local storage
+*   MVVM architecture clean code and comprehensive testing
+*   Responsive design that adapts to all device sizes
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the repository:</p>
+
 ```
-lib/
-  core/           # Common utilities, error handling, logging, themes
-  data/           # Data sources (Supabase, Hive, etc.), models, repositories
-  domain/         # Business logic, use cases, entities
-  presentation/   # UI: screens, widgets, providers (state management)
-  services/       # AI, 3D, analytics, etc.
-  main.dart
-
-test/
-  unit/
-  widget/
+git clone https://github.com/hastik07/Chat-Bot.git
 ```
 
-## Getting Started
-1. Install Flutter (latest stable) and run `flutter pub get`.
-2. Set up a Supabase project and add your URL and anon key in `lib/main.dart`.
-3. Run the app: `flutter run`
+<p>2. Install dependencies:</p>
 
-## Responsive Testing
-- Test on different device sizes (small, medium, large phones, tablets)
-- Verify portrait and landscape orientations
-- Check touch target sizes and usability
-- See `RESPONSIVE_TESTING_GUIDE.md` for detailed testing instructions
+```
+flutter pub get
+```
 
-## Dependencies
-- Flutter
-- Provider
-- Supabase Flutter
-- Hive & Hive Flutter
-- path_provider
-- 21st.dev SDK (3D UI)
+<p>3. Run the application:</p>
 
-## Contributing
-- Follow MVVM and clean code principles
-- Write unit and widget tests
-- Document your code
-- Test responsive design across devices
+```
+flutter run
+```
 
----
-For more details, see the API and testing documentation (coming soon).
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Flutter
+*   Dart
+*   Cursor
+*   Supabase
+*   Hive
+*   Provider
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the MIT

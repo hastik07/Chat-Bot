@@ -24,9 +24,9 @@ Future<void> main() async {
 
   // Initialize Supabase
   await Supabase.initialize(
-    url: 'https://gxyqaorjzoriggkkbbxb.supabase.co',
+    url: '[Enter Your Supabase Project URL Here]',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd4eXFhb3Jqem9yaWdna2tiYnhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMTkxMjgsImV4cCI6MjA2Nzg5NTEyOH0.Xr67fiHA91OmNNGksHlertlDqQxJq0dQwXhu2wECl8g',
+        '[Enter Your Supabase Anon Key Here]',
   );
 
   runApp(
